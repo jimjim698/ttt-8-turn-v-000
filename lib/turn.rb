@@ -31,18 +31,12 @@ def move(board, input, token="X")
   board[input]= token
 end
 
- 
-
 def turn(board)
  puts "Please enter 1-9:"
  input = gets.strip
-  input = input_to_index(input)
- valid = valid_move?(board, input)
- if valid == true
-      move(board, input, "X")
-      display_board(board)
-  else
-  puts "please enter 1-9:"
-   input = gets.strip
+ input = input_to_index(input)
+ if valid_move?(board, index)
+   move(board, index, "X")
  end
 end
+
