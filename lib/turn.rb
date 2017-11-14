@@ -35,7 +35,7 @@ end
   puts "Please enter 1-9:"
   index = gets.strip
   input_to_index(index)
-  if valid_move?(board, index) 
+  if valid_move?(board, index)
     move(board, index, "X")
   end
 end
